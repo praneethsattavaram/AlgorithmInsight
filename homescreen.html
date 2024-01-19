@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlgorithmVisualizer
+    </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            font-family: 'Poppins' sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(4, 4, 32);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 23px;
+        }
+
+        nav ul li a:hover {
+            color: rgb(128, 128, 219);
+            font-size: 1.1rem;
+        }
+
+        .left {
+            font-size: 1.4rem;
+        }
+
+        .leftSection {
+            margin: 50px 0;
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        .rightSection{
+            margin: 50px;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+
+        .Sorting{
+            margin: 50px;
+            font-size: 2rem;
+        }
+
+        .SortingTypes{
+            margin: 20px;
+        }
+
+        .SortingTypes a{
+            text-decoration: none;
+            color: antiquewhite;
+        }
+
+        .SortingTypes a:hover {
+            color: rgb(81, 148, 202);
+            font-size: 3.1rem;
+        }
+
+        #element {
+            color: rgb(230, 250, 232);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"> AlgorithmInsight - The Algorithm Visualizer</div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <div>Welcome to AlgorithmInsight</div>
+            </div>
+            <div class="rightSection">
+                <span id="element"></span>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="Algorithms">
+            <div class="Sorting">
+                <div>Types of Sorting</div>
+                <div class="SortingTypes">
+                    <ul>
+                        <li><a href="/">Bubble Sort</a></li>
+                        <li><a href="/">Merge Sort</a></li>
+                        <li><a href="/">Quick Sort</a></li>
+                        <li><a href="/">Insertion Sort</a></li>
+                        <li><a href="/">Selection Sort</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </section>
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Sorting', 'Searching', 'Path Finding'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
